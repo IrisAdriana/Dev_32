@@ -55,7 +55,6 @@ public class Menu {
             System.out.println("No quiz available, you must create first a quiz");
             return;
         }
-
         quizAnswers = QuizUIHandler.fillQuiz(quiz);
     }
 

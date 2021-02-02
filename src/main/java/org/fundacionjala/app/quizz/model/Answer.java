@@ -16,4 +16,13 @@ public class Answer {
     public String toString() {
         return question.getTitle() + ": " + Arrays.toString(answers.toArray());
     }
+
+    public String getTitle() {
+        return question.getTitle();
+    }
+
+    public String answers() {
+        return Arrays.toString(answers.toArray());
+    }
+
 }

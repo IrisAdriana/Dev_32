@@ -10,10 +10,12 @@ import org.fundacionjala.app.quizz.console.util.InputReader;
 
 public class QuizUIHandler {
 
+	/* create new Quiz*/
 	public static Quiz createQuiz() {
 		return new QuizUIMenu().handleCreateQuiz();
 	}
 
+	/* Fill questions Quiz*/
 	public static QuizAnswers fillQuiz(Quiz quiz) {
 		QuizAnswers quizAnswers = new QuizAnswers(quiz);
 		QuestionInputHandler questionHandler = new QuestionInputHandler();
@@ -28,6 +30,7 @@ public class QuizUIHandler {
 		return quizAnswers;
 	}
 
+	/* show Quiz */
 	public static void showQuiz(QuizAnswers quizAnswers) {
 		System.out.println(quizAnswers.getQuiz().getTitle());
 		System.out.println("=============================================");
